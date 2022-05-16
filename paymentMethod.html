@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hp kart</title>
+    <script src="https://kit.fontawesome.com/533c9849ee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/logo2.png" type= "image/x-icon">
+     
+    <!-- <link rel="stylesheet" href="page1Style.css "> -->
+    <link rel="stylesheet" href="paymentMethodStyle.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="./images/logo2.png" alt="">
+        <h1><a href="./firstPage.html">hp Kart</a></h1>
+        <div class="Search">
+            <i class="fa fa-search "></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="more" onmouseover="dropdown()" onmouseleave="hide()">
+            more
+            <i class="fa fa-caret-down"></i>
+            <div id="insideMore" >
+                <ul>
+                    <div id="arrow"><i class="fa fa-caret-up" id ="arrowId"></i></div>
+                    <li id="firstLi"><a href="">Your Cart</a> </li>
+                    <li><a href="">Wish List</a> </li>
+                    <li><a href="">Search</a> </li>
+                    <li><a href="">Settings</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div id="login" class="more">
+            <div><a href="">login</a></div>
+            <i class="fa fa-user-circle"></i>
+        </div>
+    </header>
+
+    <section class = "section1">
+        <div class="heading">
+            Choose Your Payment option
+        </div>
+        <div class="container1">
+            <a href="payment.html">
+                <div class="method" id="creditCard">
+                    <div class="img">
+                        <img src="./images/creditCard.jpg" alt="">
+                    </div>
+                    <div class="methodName">
+                        Pay By Credit Card
+                    </div>
+                </div>
+            </a>
+
+            <a href="payment.html">
+                <div class="method" id="debitCard">
+                    <div class="img">
+                        <img src="./images/DebitCard.jpg" alt="">
+                    </div>
+                    <div class="methodName">
+                        Pay By Debit Card
+                    </div>
+                </div>
+            </a>
+
+            <a href="payment.html">
+                <div class="method" id="netBanking">
+                    <div class="img">
+                        <img src="./images/netBanking.png" alt="">
+                    </div>
+                    <div class="methodName">
+                        Pay By Internet Banking 
+                    </div>
+                </div>
+            </a>
+
+            <a href="payment.html">
+                <div class="method" id="UPI">
+                    <div class="img">
+                        <img src="./images/upi.jpg" alt="">
+                    </div>
+                    <div class="methodName">
+                        Pay By UPI
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="container2">
+           <div id="h" >
+              
+           </div>
+        </div>
+    </section>
+
+    <script >
+        let content = document.getElementById('insideMore');
+        function dropdown(){
+            content.style.display = "block";
+        }
+        function hide(){
+            content.style.display ="none";
+        }
+
+        
+    </script>
+    
+</body>
+</html>

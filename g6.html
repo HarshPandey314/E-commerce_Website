@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hp kart</title>
+    <script src="https://kit.fontawesome.com/533c9849ee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/logo2.png" type= "image/x-icon">
+    
+    <link rel="stylesheet" href="page2Style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="./images/logo2.png" alt="">
+        <h1><a href="./firstPage.html">hp Kart</a></h1>
+        <div class="Search">
+            <i class="fa fa-search "></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="more" onmouseover="dropdown()" onmouseleave="hide()">
+            more
+            <i class="fa fa-caret-down"></i>
+            <div id="insideMore" >
+                <ul>
+                    <div id="arrow"><i class="fa fa-caret-up" id ="arrowId"></i></div>
+                    <li id="firstLi"><a href="">Your Cart</a> </li>
+                    <li><a href="">Wish List</a> </li>
+                    <li><a href="">Search</a> </li>
+                    <li><a href="">Settings</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div id="login" class="more">
+            <div><a href="">login</a></div>
+            <i class="fa fa-user-circle"></i>
+        </div>
+    </header>
+
+    <section>
+        <div class="heading">
+            Product Details
+        </div>
+        <div class="container">
+            <div class="cont1">
+                <img id="image1" src="./images/g6.webp" alt="">
+                <img id="image2" src="./images/g6.2.jpg" alt="">
+                <img id="image3" src="./images/g6.3.jpg" alt="">
+                <button id="btn2" onclick="show()" ><i class="fa fa-chevron-circle-right"></i> </button>
+            </div>
+            <div class="cont2">
+                <div class="desc">Harpic Disinfectant Toilet Cleaner Liquid, Original - 1 L (Pack of 2) | India's # 1 Toilet Cleaner</div>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <span>Rating</span>
+                </div>
+                <div class="category">Category: <span>Grocery</span></div>
+                <div class="offers">
+                    <span>Offers:</span>
+                    <ul>
+                        <li>* Avail No Cost EMI on select cards for orders above ₹3000</li>
+                        <li>* 5% Instant Discount on HSBC Cashback Card Transactions</li>
+                        <li>* 10% Instant Discount up to INR 300 on City Union Bank Debit Card Transactions. Minimum purchase value INR 350</li>
+                        
+                    </ul>
+                </div>
+                <div class="price">
+                    <span >Price: </span>
+                    <span id="pr"><i class="fa fa-inr"> </i>374</span>
+                </div>
+                <div class="btn">
+                    <a href="Details.html"><Button>Buy Now</Button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function show(){
+            let image1 = document.getElementById("image1");
+            let image2 = document.getElementById("image2");
+            let image3 = document.getElementById("image3");
+            if(image1.style.display != 'none' ){
+
+                image1.style.display = "none";
+                image2.style.display = "block";
+                image3.style.display = "none";
+                
+            }
+            else if(image2.style.display == 'block' ){
+
+                image1.style.display = "none";
+                image2.style.display = "none";
+                image3.style.display = "block";
+                
+            }
+            else if(image3.style.display == 'block'){
+
+                image1.style.display = "block";
+                image2.style.display = "none";
+                image3.style.display = "none";
+
+            }
+        }
+
+        let content = document.getElementById('insideMore');
+        function dropdown(){
+            content.style.display = "block";
+        }
+        function hide(){
+            content.style.display ="none";
+        }
+    </script>
+
+</body>
+</html>

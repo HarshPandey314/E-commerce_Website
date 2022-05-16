@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hp kart</title>
+    <script src="https://kit.fontawesome.com/533c9849ee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/logo2.png" type= "image/x-icon">
+     
+    <link rel="stylesheet" href="page1Style.css ">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="./images/logo2.png" alt="">
+        <h1><a href="./firstPage.html">hp Kart</a></h1>
+        <div class="Search">
+            <i class="fa fa-search " onclick="search()"></i>
+            <input id="searchBox" onkeypress="enterfunc(event)" type="text" name="search"  value="" placeholder = "Search">
+        </div>
+        <div class="more" onmouseover="dropdown()" onmouseleave="hide()">
+            more
+            <i class="fa fa-caret-down"></i>
+            <div id="insideMore" >
+                <ul>
+                    <div id="arrow"><i class="fa fa-caret-up" id ="arrowId"></i></div>
+                    <li id="firstLi"><a href="">Your Cart</a> </li>
+                    <li><a href="">Wish List</a> </li>
+                    <li><a href="">Search</a> </li>
+                    <li><a href="">Settings</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div id="login" class="more">
+            <div><a href="">login</a></div>
+            <i class="fa fa-user-circle"></i>
+        </div>
+    </header>
+
+
+    <section class = "mainSection">
+        <div class="electronics">
+            <div class="heading"></i>Electronics</div>
+            
+            <div class="container">
+                <button class="slider1" onclick="slide1_E()">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+
+                <div id="item1"  class = "item">
+                    <img src="./images/e1.jpg" alt="">
+                    <p class="descr"><a href="e1.html">Redmi 9A (Nature Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor </a></p>
+                    <button><a href="e1.html">Buy Now</a></button>
+                </div>
+                <div id="item2" class = "item">
+                    <img src="./images/e2.jpg" alt="">
+                    <p class="descr"><a href="e2.html">Noise ColorFit Ultra 2 with 1.78" AMOLED Display, Best-in-Class Resolution</a></p>
+                    <button><a href="e2.html">Buy Now</a></button>
+                </div>
+                <div id="item3" class = "item">
+                    <img src="./images/e3.jpg" alt="">
+                    <p class="descr"><a href="e3.html">boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)</a></p>
+                    <button><a href="e3.html">Buy Now</a></button>
+                </div>
+                <div id="item4" class = "item">
+                    <img src="./images/e4.jpg" alt="">
+                    <p class="descr"><a href="e4.html">Echo Dot (3rd Gen, Black) + Wipro 9W LED Smart Color Bulb combo  </a></p>
+                    <button><a href="e4.html">Buy Now</a></button>
+                </div>
+                <div id="item5" class = "item">
+                    <img src="./images/e5.jpg" alt="">
+                    <p class="descr"><a href="e5.html">Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</a></p>
+                    <button><a href="e5.html">Buy Now</a></button>
+                </div>
+                <div id="item6" class = "item hidden" >
+                    <img src="./images/e6.jpg" alt="">
+                    <p class="descr"><a href="e6.html">HP 15 Ryzen 3 Thin & Light AMD Ryzen 3 3250U, 15.6 inches FHD Laptop (8GB/256GB SSD/Windows 10)</a></p>
+                    <button><a href="e6.html">Buy Now</a></button>
+                </div>
+                <div id="item7" class = "item hidden" >
+                    <img src="./images/e1.3.jpg" alt="">
+                    <p class="descr"><a href="e7.html">HP 15 Ryzen 3 Thin & Light AMD Ryzen 3 3250U, 15.6 inches FHD Laptop (8GB/256GB SSD/Windows 10)</a></p>
+                    <button><a href="e7.html">Buy Now</a></button>
+                </div>
+                <button class="slider2" onclick="slide2_E()">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="clothing">
+            <div class="heading"></i>Clothing</div>
+            
+            <div class="container">
+                <button class="slider1" onclick="slide1_C()">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+
+                <div id="citem1"  class = "item citem" >
+                    <img src="./images/c1.webp" alt="">
+                    <p><a href="c1.html">Raymond
+                        Wool Blend Men's Full Sleeve Contemporary FIT Dark Blue</a></p>
+                    <button><a href="c1.html">Buy Now</a></button>
+                </div>
+                <div id="citem2" class = "item citem" >
+                    <img src="./images/c2.webp" alt="">
+                    <p><a href="c2.html">Integriti
+                        mens TRACK SUIT</a></p>
+                    <button><a href="c2.html">Buy Now</a></button>
+                </div>
+                <div id="citem3" class = "item citem" >
+                    <img src="./images/c3.webp" alt="">
+                    <p><a href="c3.html">Yashika
+                        Women's Art Silk Saree With Blouse Piece</a></p>
+                    <button><a href="c3.html">Buy Now</a></button>
+                </div>
+                <div id="citem4" class = "item citem" >
+                    <img src="./images/c4.webp" alt="">
+                    <p><a href="c4.html">Florely
+                        Women's Anarkali Long Gown With Dupatta</a></p>
+                    <button><a href="c4.html">Buy Now</a></button>
+                </div>
+                <div id="citem5" class = "item citem" >
+                    <img src="./images/c5.webp" alt="">
+                    <p><a href="c5.html">AASK
+                        Western Dresses for Women|Stylish Latest</a></p>
+                    <button><a href="c5.html">Buy Now</a></button>
+                </div>
+                <div id="citem6" class = "item citem hidden" >
+                    <img src="./images/c6.webp" alt="">
+                    <p><a href="c6.html">AASK
+                        Half Moon 35 L Casual Waterproof Laptop Bag/Backpack for Men Women Boys Girls/Office </a></p>
+                    <button><a href="c6.html">Buy Now</a></button>
+                </div>
+                <button class="slider2" onclick="slide2_C()">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="Grocery">
+            <div class="heading"></i>Grocery</div>
+            
+            <div class="container">
+                <button class="slider1" onclick="slide1_G()">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <div id="gitem1"  class = "item gitem " >
+                    <img src="./images/g1.webp" alt="">
+                    <p><a href="g1.html">Maggi 2-Minute Noodles Masala, 70g (Pack of 12)</a></p>
+                    <button><a href="g1.html">Buy Now</a></button>
+                </div>
+                <div id="gitem2" class = "item gitem" >
+                    <img src="./images/g2.webp" alt="">
+                    <p><a href="g2.html">Tata Sampann Unpolished Chana Dal, 1kg</a></p>
+                    <button><a href="g2.html">Buy Now</a></button>
+                </div>
+                <div id="gitem3" class = "item gitem" >
+                    <img src="./images/g3.webp" alt="">
+                    <p><a href="g3.html">Aashirvaad Select Premium Sharbati Atta, 5kg</a></p>
+                    <button><a href="g3.html">Buy Now</a></button>
+                </div>
+                <div id="gitem4" class = "item gitem" >
+                    <img src="./images/g4.webp" alt="">
+                    <p><a href="g4.html">Fortune Sunlite Refined Sunflower Oil, 1L</a></p>
+                    <button><a href="g4.html">Buy Now</a></button>
+                </div>
+                <div id="gitem5" class = "item gitem" >
+                    <img src="./images/g5.webp" alt="">
+                    <p><a href="g5.html">Tata Salt, 1kg</a></p>
+                    <button><a href="g5.html">Buy Now</a></button>
+                </div>
+                <div id="gitem6" class = "item gitem hidden" >
+                    <img src="./images/g6.webp" alt="">
+                    <p><a href="g6.html">Harpic Disinfectant Toilet Cleaner Liquid, Original - 1 L (Pack of 2) | </a></p>
+                    <button><a href="g6.html">Buy Now</a></button>
+                </div>
+                <button class="slider2" onclick="slide2_G()">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="ft">
+            <div class="para1">Thanks For Visiting!</div>
+            <div class="para2"><i class="fa fa-copyright"></i> 2021 hp kart | All Rights Reserved</div>
+        </div>
+    </footer>
+
+
+    <script>
+        let content = document.getElementById('insideMore');
+        function dropdown(){
+            content.style.display = "block";
+        }
+        function hide(){
+            content.style.display ="none";
+        }
+
+        
+        function search(){
+            var input = document.getElementById('searchBox').value.toLowerCase();
+            var x = document.getElementsByTagName("a");
+            // var y = document.getElementsByTagName('p').document.getElementsByTagName("a");
+            for( i=0;i<x.length;i++){
+                if(x[i].innerHTML.toLowerCase().includes(input)){
+                    console.log(x[i].innerHTML);
+                    var loc = x[i].href;
+                    loc = loc.toString();
+                    console.log(loc);
+                    
+                    // location.replace(loc);
+                    location.href = loc;
+                }
+                
+            }
+        }
+
+        function enterfunc(event){
+            if(event.keyCode==13){
+                search();
+            }
+        }
+
+        let countE = 0;
+        let countC = 0;
+        let countG = 0;
+        last =5;
+        function slide2_E(){
+            let item = document.getElementsByClassName('item');
+            if(countE<2){
+                item[countE].style.display = "none";
+                item[5+countE].style.display = "block";
+                countE++;
+            }
+        }
+        function slide1_E(){
+            let item = document.getElementsByClassName('item');
+            if(countE>=1){
+                item[4+countE].style.display = "none";
+                item[countE-1].style.display = "block";
+                countE--;
+            }
+        }
+        function slide2_C(){
+            let item = document.getElementsByClassName('citem');
+            if(countC<1){
+                item[countC].style.display = "none";
+                item[5+countC].style.display = "block";
+                countC++;
+            }
+        }
+        function slide1_C(){
+            let item = document.getElementsByClassName('citem');
+            if(countC>=1){
+                item[4+countC].style.display = "none";
+                item[countC-1].style.display = "block";
+                countC--;
+            }
+        }
+        function slide2_G(){
+            let item = document.getElementsByClassName('gitem');
+            if(countG<1){
+                item[countG].style.display = "none";
+                item[5+countG].style.display = "block";
+                countG++;
+            }
+        }
+        function slide1_G(){
+            let item = document.getElementsByClassName('gitem');
+            if(countG>=1){
+                item[4+countG].style.display = "none";
+                item[countG-1].style.display = "block";
+                countG--;
+            }
+        }
+
+    </script>
+</body>
+</html>

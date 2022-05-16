@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+header div{
+    display:inline;
+}
+header a{
+    text-decoration: none;
+    color:white;
+}
+header {
+    border:2px solid black;
+    /* text-align: center; */
+    margin: 5px auto;
+    font-size: 18px;
+    color: white;
+    background-color: #332020;
+    /* display:inline-block; */
+}
+header img{
+    /* display:block; */
+    margin: 0px 22px;
+    padding:0px 0px;
+    position:relative;
+    top: 4px;
+    left:16px;
+    width: 35px;
+    height:32px;
+}
+header h1{
+    display:inline-block;
+}
+.Search{
+    display: inline;
+    margin: 0px 15px;
+}
+.Search input{
+    width:546px;
+    height:34px;
+    position:relative;
+    top:-7px;
+    font-size: 22px;
+    padding:0px 17px;
+}
+.Search i{
+    position:relative;
+    top:-11px;
+    left: 583px;
+    z-index: 2;
+    color:black;
+}
+.more{
+    position: relative;
+    left: 24px;
+    top: -8px;
+    font-size: 25px;
+    cursor:pointer;
+}
+.more i{
+    font-size:16px;
+}
+#insideMore{
+    display:none;
+    width: 150px;
+    height: 155px;
+    border: 1px solid black;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background-color: white;
+    opacity:0.95;
+    color:black;
+    font-size: 20px;
+}
+#insideMore li{
+    list-style: none;
+    padding: 2px 5px;
+}
+#firstLi{
+    margin-top: 3px;
+}
+#insideMore li a{
+    color:inherit;
+}
+#insideMore li:hover {
+    color:white;
+    background-color: grey;
+}
+#arrow{
+    color:white;
+    font-size:20px;
+    width:10px;
+    height:10px;
+    position:absolute;
+    top:-15px;
+    left:63px;
+}
+#arrowId{
+    font-size: 21px;
+}
+#login{
+    margin:auto 10px;
+    position:relative;
+    left: 300px;
+}
+#login i{
+    font-size:34px;
+    position:relative;
+    top:4px;
+}
+header{
+    position:sticky;
+    top:0px;
+    margin-top:0px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 34px;
+    margin:14px 566px;
+    padding:0px 0px;
+    background-color: grey;
+}
+.container{
+    display:flex;
+    /* border:2px solid black; */
+    /* background-color: gray; */
+    align-items: center;
+   
+}
+.item{
+    text-align: center;
+    margin:0px 4px;
+    /* border:2px solid black; */
+    /* height: 320px;*/
+    width:260px;
+}
+.item img{
+    
+    /* display:inline; */
+    width:200px;
+    /* height:140px; */
+    /* object-fit: cover; */
+}
+.item p{
+    /* border:2px solid black; */
+    font-size:14px;
+    width:250px;
+    height:65px;
+    margin:6px 2px;
+    padding:0px 0px;
+
+}
+.item button{
+    width:160px;
+    height:27px;
+    font-size:18px;
+    margin-bottom: 3px;
+}
+#item1{
+    margin-left:0px;
+}
+#item7 img{
+    max-height:135px;
+}
+#citem1{
+    margin-left:0px;
+}
+.citem img{
+    height:500px !important;
+    /* min-width:150px; */
+}
+.gitem img{
+    height: 232px;
+}
+.item button:hover{
+    width:200px;
+    height: 38px;
+    background-color: rgb(148, 112, 34);
+    color:white
+}
+header h1 a:hover{
+    color:white;
+}
+a:hover{
+    color:red;
+}
+img:hover{
+    border: 1px solid rgb(0, 47, 255);
+}
+button a{
+    text-decoration: none;
+    color:black;
+}
+button a:hover{
+    color:white;
+}
+.ft{
+    display: flex;
+    background-color: black;
+    color:white;
+    height:25px;
+    margin:0px;
+    margin-bottom:0px;
+    font-size:17px;
+    
+}
+.para1{
+    margin:auto 310px auto 607px;
+}
+.slider2{
+    height: 50px;
+    font-size: 20px;;
+    background-color: transparent;
+    border: none;
+    color:#ff0000;
+    position:relative;
+    /* top: 50px; */
+    left: -5px;
+}
+.slider1{
+    height:50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color:#ff0000;
+    position: relative;
+    /* top:100px; */
+    left:4px;
+}
+.slider1:hover{
+    background-color: black;
+    color:white;
+}
+.slider2:hover{
+    background-color: black;
+    color:white;
+}
+#item6{
+    display:none;
+}
+#citem6{
+    display:none;
+}
+#gitem6{
+    display:none;
+}
+.hidden{
+    display: none;
+}
+
